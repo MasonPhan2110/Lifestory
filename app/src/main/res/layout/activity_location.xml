@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LocationActivity"
+    android:padding="20dp"
+    android:background="@color/white">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:id="@+id/bar_layout">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:theme="@style/MyAppTheme"
+            app:popupTheme="@style/MenuStyle">
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_below="@id/bar_layout"
+        android:layout_marginTop="100dp"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        android:src="@drawable/location"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/picture"/>
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/picture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Thay doi quyen truy cap vi tri thanh 'Luon cho phep' "
+        android:gravity="center"
+        android:textSize="23dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:id="@+id/text1"/>
+    <TextView
+        android:layout_below="@id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="De tiep tuc su dung tinh nang Nearby Friends va chia se khu vuc hay tinh/thanh pho cua ban dang o, hay thay doi quyen truy cap vao vi tri thanh Luon cho phep"
+        android:textSize="17dp"
+        android:id="@id/text2"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Thay doi quyen truy cap vi tri"
+        android:textAllCaps="false"
+        android:textSize="18dp"
+        android:layout_above="@+id/btn2"
+        android:id="@+id/btn1"
+        android:background="#108EF3"
+        android:textColor="@color/white"/>
+    <Button
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Luc khac"
+        android:textAllCaps="false"
+        android:textSize="18dp"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/white"
+        android:background="#E4C3C2C2"
+        android:id="@+id/btn2"/>
+</RelativeLayout>

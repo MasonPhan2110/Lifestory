@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="   Save Post"
+        android:id="@+id/save_post"
+        android:textAllCaps="false"
+        android:textSize="16dp"
+        android:paddingLeft="10dp"
+        android:textAlignment="textStart"
+        android:visibility="visible"
+        android:background="@drawable/background_popup"/>
+    <Button
+        android:layout_below="@id/save_post"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="   Edit Post"
+        android:id="@+id/edit_post"
+        android:textAllCaps="false"
+        android:textSize="16dp"
+        android:paddingLeft="10dp"
+        android:textAlignment="textStart"
+        android:visibility="gone"
+        android:background="@color/white"/>
+    <Button
+        android:layout_below="@id/edit_post"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="   Delete Post"
+        android:id="@+id/delete_post"
+        android:textAllCaps="false"
+        android:textSize="16dp"
+        android:paddingLeft="10dp"
+        android:textAlignment="textStart"
+        android:visibility="gone"
+        android:background="@color/white"/>
+
+    <Button
+        android:layout_below="@id/save_post"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="   Hide Post"
+        android:id="@+id/hide_post"
+        android:textAllCaps="false"
+        android:textSize="16dp"
+        android:paddingLeft="10dp"
+        android:textAlignment="textStart"
+        android:visibility="gone"
+        android:background="@color/white"/>
+</RelativeLayout>

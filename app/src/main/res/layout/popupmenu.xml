@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="   View Picture"
+        android:id="@+id/viewpicture"
+        android:textAllCaps="false"
+        android:textSize="16dp"
+        android:paddingLeft="10dp"
+        android:textAlignment="textStart"
+        android:visibility="gone"
+        android:background="@drawable/background_popup"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="   Change Picture"
+        android:paddingLeft="10dp"
+        android:textAlignment="textStart"
+        android:layout_below="@id/viewpicture"
+        android:id="@+id/changepicture"
+        android:textAllCaps="false"
+        android:textSize="16dp"
+        android:background="@color/white"
+        android:visibility="gone"/>
+    <Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="   Check In"
+    android:paddingLeft="10dp"
+    android:textAlignment="textStart"
+    android:layout_below="@id/changepicture"
+    android:id="@+id/Checkin"
+    android:textAllCaps="false"
+    android:textSize="16dp"
+        android:background="@drawable/background_popup"
+        android:visibility="gone"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="   Go Live"
+        android:paddingLeft="10dp"
+        android:textAlignment="textStart"
+        android:layout_below="@id/Checkin"
+        android:id="@+id/Golive"
+        android:textAllCaps="false"
+        android:textSize="16dp"
+        android:background="@color/white"
+        android:visibility="gone"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="   Tag Friends"
+        android:paddingLeft="10dp"
+        android:textAlignment="textStart"
+        android:layout_below="@id/Golive"
+        android:id="@+id/Tag"
+        android:textAllCaps="false"
+        android:textSize="16dp"
+        android:background="@color/white"
+        android:visibility="gone"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="   Background Color"
+        android:paddingLeft="10dp"
+        android:textAlignment="textStart"
+        android:layout_below="@id/Tag"
+        android:id="@+id/Background"
+        android:textAllCaps="false"
+        android:textSize="16dp"
+        android:background="@color/white"
+        android:visibility="gone"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="   Camera"
+        android:paddingLeft="10dp"
+        android:textAlignment="textStart"
+        android:layout_below="@id/Background"
+        android:id="@+id/Camera"
+        android:textAllCaps="false"
+        android:textSize="16dp"
+        android:background="@color/white"
+        android:visibility="gone"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="   Photo/Video"
+        android:paddingLeft="10dp"
+        android:textAlignment="textStart"
+        android:layout_below="@id/Camera"
+        android:id="@+id/Photo"
+        android:textAllCaps="false"
+        android:textSize="16dp"
+        android:background="@color/white"
+        android:visibility="gone"/>
+</RelativeLayout>

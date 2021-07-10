@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:id="@+id/radio_gr">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose privacy"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+    <View
+        android:layout_width="391dp"
+        android:layout_height="1dp"
+        android:background="@color/grey"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"/>
+    <RadioButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Public"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:onClick="onRadioButtonClicked"
+        android:id="@+id/choose_public"/>
+    <TextView
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Anyone can see who's in the group and what they post"
+        android:baselineAlignBottom="true"
+        android:layout_toEndOf="@+id/choose_public"
+        android:clickable="true"
+        android:id="@+id/text_public"/>
+    <RadioButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Private"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:onClick="onRadioButtonClicked"
+        android:id="@+id/choose_private"/>
+    <TextView
+        android:layout_marginLeft="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Only members can see who's in the group and what they post"
+        android:layout_marginRight="10dp"
+        android:baselineAlignBottom="true"
+        android:layout_toEndOf="@+id/choose_private"
+        android:clickable="true"
+        android:id="@+id/text_private"/>
+</RadioGroup>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Edit_bioActivity"
+    android:background="@color/white">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bar_layout">
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbar"
+            android:theme="@style/MyAppTheme"
+            app:popupTheme="@style/MenuStyle"
+            android:background="@color/white">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:textSize="20dp"
+                    android:text="Edit Bio" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentRight="true"
+                    android:textSize="20dp"
+                    android:text="Save"
+                    android:id="@+id/save"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bar_layout">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_marginTop="10dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/profile_img"/>
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/profile_img"
+            android:text="username"
+            android:layout_marginLeft="10dp"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"/>
+        <View
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/profile_img"
+            android:id="@+id/line"
+            android:layout_centerHorizontal="true"
+            android:layout_width="391dp"
+            android:layout_height="1dp"
+            android:background="@color/grey" />
+        <EditText
+            android:id="@+id/bio_create"
+            android:layout_width="397dp"
+            android:layout_height="wrap_content"
+            android:hint="What's new?"
+            android:layout_below="@id/line"
+            android:backgroundTint="@color/grey"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_marginTop="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/grp_ava"
+        android:scaleType="centerCrop"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/name_gr"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="Name Group"
+        android:layout_toRightOf="@id/grp_ava"
+        android:layout_marginLeft="15dp"
+        android:layout_toEndOf="@id/grp_ava"
+        android:layout_centerVertical="true"
+        android:textSize="18dp"/>
+</RelativeLayout>

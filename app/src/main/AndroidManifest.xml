@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.minh.app">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/MyAppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".LocationActivity"></activity>
+
+        <service
+            android:name=".Class.ClosingService"
+            android:stopWithTask="false" />
+
+        <activity android:name=".viewPostActivity" />
+        <activity android:name=".Friend_RequestActivity" />
+        <activity android:name=".Save_PostActivity" />
+        <!--
+               Set to true if your app is Standalone, that is, it does not require the handheld
+               app to run.
+        -->
+        <activity android:name=".Group_for_NewActivity" />
+        <activity android:name=".Group_ViewActivity" />
+        <activity android:name=".Add_MemberActivity" />
+        <activity android:name=".SettingActivity" />
+        <activity android:name=".CreateActivity" />
+        <activity android:name=".DiscoverActivity" />
+        <activity android:name=".Your_GroupActivity" />
+        <activity android:name=".All_FriendsActivity" />
+        <activity android:name=".AddActivity" />
+        <activity android:name=".Edit_bioActivity" />
+        <activity android:name=".Edit_detailActivity" />
+        <activity android:name=".Edit_ProfileActivity" />
+        <activity android:name=".EditActivity" />
+        <activity android:name=".ViewPictureActivity" />
+        <activity android:name=".CommentActivity" />
+        <activity
+            android:name=".CreatePostActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".SearchActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".MessageActivity" />
+        <activity
+            android:name=".ProfileActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".LoginActivity"
+            android:parentActivityName=".StartActivity" />
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".RegisterActivity"
+            android:parentActivityName=".StartActivity" />
+        <activity android:name=".StartActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
